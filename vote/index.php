@@ -218,22 +218,28 @@ if (file_exists($file)) {
 
     })
 
-    // 偵測對方平台並跳轉網址
-    function detectPlatformAndRedirect() {
-  // 使用正則表達式檢測是否是手機平台
-    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  
-    if (isMobile) {
-    // 如果是手機平台，跳轉到手機網址
-        window.location.href = 'https://wda.mackliu.com/s1120213/vote_m/';
-    } else {
-    // 如果是電腦平台，跳轉到電腦網址
-        window.location.href = 'https://wda.mackliu.com/s1120213/vote/';
-    }
+    // 檢查本地存儲是否存在平台偵測結果
+    var platformDetected = localStorage.getItem('platformDetected');
+
+    if (!platformDetected) {
+      // 進行平台偵測
+      function detectPlatformAndRedirect() {
+        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        if (isMobile) {
+          window.location.href = 'https://wda.mackliu.com/s1120213/vote_m/';
+        } else {
+          window.location.href = 'https://wda.mackliu.com/s1120213/vote/';
+        }
+      }
+
+      // 儲存平台偵測結果到本地存儲
+      localStorage.setItem('platformDetected', true);
+
+      // 調用函數進行偵測和跳轉
+      detectPlatformAndRedirect();
     }
 
-    // 調用函數進行偵測和跳轉
-    detectPlatformAndRedirect();
 
 
 
