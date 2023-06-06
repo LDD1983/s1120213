@@ -96,13 +96,13 @@
 
 /* ///////              .main-subject             ////////////////////////////////// */
 .index-li>.main-subject{
-    font-size: 1.1rem;
-    letter-spacing: 3px;
-    width: 100%;
-    height: 3rem;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    width: 80%;
+    height: 4rem;
     /* opacity: 0.7; */
-    position: relative;
-    text-align: left;
+   
+    text-align: center;
     
     margin:0;
     /* border-left: 7rem solid #393434; */
@@ -110,11 +110,11 @@
     background-repeat: no-repeat;
    
     border-left: 1% solid lightgrey;
-    padding-left: 1rem;
-    margin-top: 4rem;
-    border-radius: 6px;
+    
+ 
+    border-radius: 10px;
    
-    padding-top: 0.3rem;
+    padding-top: 1.2rem;
     color: revert;
     font-weight: 500;
     animation-name: main-subject;
@@ -189,28 +189,26 @@
 
 /* //////////  .go-vote //////////////////////////////////////////////// */
 li>.go-vote{
-    position: absolute;
-    bottom: -3.5rem;
-    height: 66px;
-    left: 70%;
-    width: 80px;
+    display: block;  
+    height: 2.5rem;
+    width: 90%;
     /* rotate: 3deg; */
-    text-transform: uppercase;    
-    background-image: linear-gradient(to bottom right,  #da9be5, lightpink);
+    
+    background-color: lightpink;
     color: floralwhite;
     font-size: 1rem;
     font-weight: bold;
-    border: none;
-    padding-top: 2%;
-    border: 1px solid #cbcbcb;
-    opacity: 0.8;
+   
+   
+    border: 1px solid #6e6e6e;
+    opacity: 1;
     animation-name:go-vote;
     animation-duration: 3s;
 }
 li>.go-vote:hover{
     opacity: 1;
     border: 1px solid darkgrey;
-    background-color: lightpink;
+    
     background-image: none;
 }
 li>.go-vote:active{
@@ -229,19 +227,15 @@ li>.go-vote:active{
 /* ////////////.vip .normal ////////////////////////*/
 .vip-login,
 .normal{
-    position: absolute;
-    width: 73px;
-    bottom: 0px;
-    height: 30px;
-    left: 34%;
-    bottom: -59%;
-        
-
+    display: block;       
+    height: 35px;
+    font-size: 1rem;
+    letter-spacing: 1rem;
 }
 .index-li>.normal{
     border:none;
-    height: 25px;
-    width: 60px;
+ 
+    width: 80%;
     background-image: linear-gradient(to right, whitesmoke, #f5b8d8);
     color: #8b5a73;
            
@@ -254,8 +248,9 @@ li>.go-vote:active{
     background-image: linear-gradient(to right, #fdf3f5, #4ef5ed);
     border: none;
     color: rgb(30, 124, 124);
-    width: 80px;
-    height: 25px;
+    width: 70%;
+
+   
     border: 1px solid #fdf3f5;
 }
 .type-info,
@@ -263,14 +258,22 @@ li>.go-vote:active{
 .normal{
     border-radius: 30px;
     width: 80px;  
-    height: 25px;
-    font-size: 0.8rem;
+  
+    font-size: 1rem;
     background-color: #fff;
+    display: block;
  
 }
 .index-li>.type-info{
-    bottom: -60%;
-    left: -33%;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    height: 1.5rem;
+    font-size: 1rem;
+    border-radius: 0;
+    letter-spacing: 1rem;
+    color: #e27878;
+   
 }
 
 

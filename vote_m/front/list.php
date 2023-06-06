@@ -10,7 +10,7 @@
     foreach ($rows as $idx => $row) {
     ?>
         <li class="index-li">
-            <p class="main-subject">主題 : <?= $row['subject']; ?> </p>
+            <p class="main-subject"><?= $row['subject']; ?> </p>
                 <button class="type-info" > 
 <?php
                     switch($row['type']){
@@ -34,7 +34,7 @@
                 ?>
            </button>
             
-           <button class="go-vote" onclick="location.href='?do=vote&id=<?=$row['id'];?>'">vote</button>
+           <button class="go-vote" onclick="location.href='?do=vote&id=<?=$row['id'];?>'">我要投票</button>
         </li>
        
     <?php

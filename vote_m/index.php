@@ -26,8 +26,8 @@
             /* margin-top: 30%; */
         } 
         .index-ul{
-            width: 90%;
-            margin-top: -3rem;
+            width: 100%;
+           
         }  
         .desc-ul{
             text-align: left;
@@ -71,9 +71,16 @@
             width: 20%;
         }
         .index-li{
-            position: relative;
-            line-height: 2;
-            height: 4rem;
+         
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-around;
+            height: 15rem;
+            border-bottom: 3px solid #ebe7e7;
+            
+            border-bottom-width: thin;
+            margin-bottom: 2rem;
         }
 
         li>button{
@@ -82,7 +89,7 @@
             background-color:#FFC1C1;
             border: 1px solid #ccc;
             font-size: 0.9rem;
-            position: relative;
+          
           
         }
         .chebox{
@@ -96,15 +103,10 @@
             margin-right: 5px;
         }
 
-        hr{
-            border: 0.3px solid #ccc;
-            opacity: 0.3;
-            width: 80%;
-            margin-top: 10px;
-        }
+       
         .img {
            display: flex;
-        
+           margin-bottom: 2rem
         }
         .img>img{
             margin-top: 10%;
