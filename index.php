@@ -27,7 +27,7 @@
             text-decoration: none;
             text-align: center;
             background: rgba(255, 182, 193, 0.26);
-            height: 8rem;            
+            height: 5rem;            
             letter-spacing: 1rem;
             opacity: 0.8;
             color: azure;
@@ -37,13 +37,20 @@
             font-weight: 100;
         }       
         .vote{
-            padding-top: 4rem;
+            padding-top: 1.1rem;
         }
         .calendar:hover{
             letter-spacing: 1.1rem;
         }
+
         .vote:hover{
             letter-spacing: 2rem;
+        }
+        .vote-m{
+            letter-spacing: 0.2rem;
+        }
+        .vote-m:hover{
+            letter-spacing: 0.8rem;
         }
         
         
@@ -52,6 +59,7 @@
 
 <body>
     <a class="vote" href="./vote/" target="_blank" > vote </a>
+    <a class="vote-m" href="./vote_m/" target="_blank" > vote for mobile </a>
     <a class="calendar" href="./calendar" target="_blank" >calendar</a>
 
 </html>

@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    padding-top: 1.1rem;
+    background-image: linear-gradient(to right, white, lightpink,white);
+    padding-right: 7%;
+    margin-top: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #ccc;
+    height: 3rem;
+    padding-top: 0.7rem;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+header>a {
+    color: brown;
+    margin-left: 9%;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-shadow: 4px 3px 6px #903838;
+    letter-spacing: 0.5rem;
+    opacity: 0.9;
+}
+
+nav>a {
+    color: #adaaaa;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 1.3rem;  
+}
+
+header>a:hover{
+    color: #f3f3f3;
+}
+nav>a:hover {
+   color:#ff7b7b;
+}
