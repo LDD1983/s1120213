@@ -59,7 +59,7 @@
 
 <body>
     <a class="vote" href="./vote/" target="_blank" > vote </a>
-    <a class="vote-m" href="./vote_m/" target="_blank" > vote for mobile </a>
+    
     <a class="calendar" href="./calendar" target="_blank" >calendar</a>
 
 </html>
