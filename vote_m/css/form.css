@@ -100,21 +100,25 @@ form .time {
 }
 
 .vote div>.go-vote-in {
-    position: absolute;
-    right: 36%;
-    width: 100px;
-    bottom: 5px;
-    height: 50px;
-    opacity: 0.5;
-    border: 1px solid black;
-    background-color: white;
-    background-image: url(/s1120213/vote_m/img/vote_ticket.png);
+    margin: 0 auto;
+    display: block;  
+    height: 3rem;
+    width: 80%;
+    /* rotate: 3deg; */
+    
+    background-color: lightpink;
+    color: floralwhite;
+    font-size: 1.5rem;
+    font-weight: bold;
+   
+   
+    border: 1px solid #bfbcbc;
+    opacity: 1;
+   
+    letter-spacing: 1rem;
 }
 
-.go-vote-in:hover {
-    rotate: 2deg;
-    opacity: 0.65;
-}
+
 
 /* h3 */
 h3 {

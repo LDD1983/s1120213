@@ -46,15 +46,24 @@
             color: lightpink;
 
         }
-        .vote-item>a{
+        .vote-item-subjest>a{
+        
+         
+          
             text-decoration: none;
             letter-spacing: 1px;
             font-size: 1.2rem;
             color: #d64646;
             opacity: 1;
+           
         }
         .vote-item>a:hover{
             color: #ff7575;
+        }
+        .vote-option>.vote-item-subjest{
+            text-align: center;
+           
+            
         }
 
         .vote-item:first-child{
@@ -105,12 +114,15 @@
 
        
         .img {
-           display: flex;
-           margin-bottom: 2rem
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem auto;
+            
+           
         }
         .img>img{
-            margin-top: 10%;
-            max-width: 100%;
+            padding-left: 2rem;
+            max-width: 140%;
             height: auto;
         }        
         .myLogo{    
@@ -123,19 +135,8 @@
             10%{opacity: 0;}
             100%{opacity: 100;}
         }
-        .mylogoBg{
-            animation-name:img-logoBg;
-            animation-duration: 3s;
-            animation-fill-mode:backwards;           
-            opacity:0;
-        }
-        @keyframes img-logoBg{ 
-            0%{opacity: 0;}           
-            60%{opacity: 0;}           
-            70%{opacity: 100;}           
-            100%{opacity: 0;}          
-            
-        }
+
+      
         
       
        

@@ -18,15 +18,17 @@ $subjects=$pdo->query("select `topic`.`id`,
     ?>
     <li class="vote-option">
         <div class="vote-item"><?=$idx+1;?>. 
-    </div>
-        <div class="vote-item">
+        </div>
+        <div class="vote-item-subjest">
             <a href="index.php?do=res&id=<?=$subject['id'];?>">
                 <?=$subject['subject'];?>
             </a>
         </div>
-        <div class="vote-item">
-            <?=$subject['總計'];?>
-        </div>
+        <!-- <div class="vote-item"> -->
+            <?php
+            // echo $subject['總計'];
+            ?>
+        <!-- </div> -->
     </li>
     <?php
     }

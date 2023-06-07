@@ -18,6 +18,14 @@
             background-image: url(./img/mahdi-bafande-6Ngmdsvb8iY-unsplash.jpg);
             height: auto;
         }
+        /* @media only screen and (max-width: 800px) {
+            body {
+                background-image:url(./img/martin-de-arriba-PesD3kizocE-unsplash.jpg);
+                background-size: cover;
+               
+                background-repeat: no-repeat;
+            }
+        } */
 
         a {
             font-size: 2rem;
@@ -52,6 +60,8 @@
         .vote-m:hover{
             letter-spacing: 0.8rem;
         }
+      
+      
         
         
     </style>
@@ -61,5 +71,11 @@
     <a class="vote" href="./vote/" target="_blank" > vote </a>
     
     <a class="calendar" href="./calendar" target="_blank" >calendar</a>
+    
+
+
+    
+    
+</body>
 
 </html>
