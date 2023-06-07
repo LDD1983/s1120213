@@ -221,6 +221,25 @@ if (file_exists($file)) {
         myHbg.style.opacity='0';
 
     })
+    function checkBrowserWidth() {
+      var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+      // 如果寬度小於等於 600，跳轉至手機版網頁
+      if (width > 1300) {
+        window.location.href = "https://wda.mackliu.com/s1120213/vote/";
+      }
+    }
+
+    // 在網頁加載時執行檢查
+    window.onload = function() {
+      checkBrowserWidth();
+    }
+
+    // 當視窗大小改變時重新檢查
+    window.onresize = function() {
+      checkBrowserWidth();
+    }
+
 
 
 </script>

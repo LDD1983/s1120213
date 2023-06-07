@@ -130,26 +130,26 @@
     animation-duration: 1s;
     
   }
-  .index-li:nth-child(3)>.main-subject
+  .index-li:nth-child(2)>.main-subject
   {
     animation-name: main-subject-2;
     animation-duration: 2s;  
     
   }
-  .index-li:nth-child(5)>.main-subject
+  .index-li:nth-child(3)>.main-subject
   {
     animation-name: main-subject-3;
     animation-duration: 3s; 
    
     
   }
-  .index-li:nth-child(7)>.main-subject
+  .index-li:nth-child(4)>.main-subject
   {
     animation-name: main-subject-4;
     animation-duration: 4s; 
     
   }
-  .index-li:nth-child(9)>.main-subject
+  .index-li:nth-child(5)>.main-subject
   {
     animation-name: main-subject-5;
     animation-duration: 5s;  
@@ -190,26 +190,27 @@
 /* //////////  .go-vote //////////////////////////////////////////////// */
 li>.go-vote{
     display: block;  
-    height: 2.5rem;
+    height: 4rem;
     width: 90%;
     /* rotate: 3deg; */
     
     background-color: lightpink;
     color: floralwhite;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
    
    
-    border: 1px solid #6e6e6e;
+    border: 1px solid #bfbcbc;
     opacity: 1;
     animation-name:go-vote;
     animation-duration: 3s;
+    letter-spacing: 1rem;
 }
 li>.go-vote:hover{
-    opacity: 1;
+    opacity: 0.9;
     border: 1px solid darkgrey;
     
-    background-image: none;
+    background-color: #ffc1c1;
 }
 li>.go-vote:active{
     opacity: 1;
@@ -235,7 +236,7 @@ li>.go-vote:active{
 .index-li>.normal{
     border:none;
  
-    width: 80%;
+    width: 60%;
     background-image: linear-gradient(to right, whitesmoke, #f5b8d8);
     color: #8b5a73;
            
@@ -248,7 +249,7 @@ li>.go-vote:active{
     background-image: linear-gradient(to right, #fdf3f5, #4ef5ed);
     border: none;
     color: rgb(30, 124, 124);
-    width: 70%;
+    width: 60%;
 
    
     border: 1px solid #fdf3f5;
@@ -256,16 +257,14 @@ li>.go-vote:active{
 .type-info,
 .vip-login,
 .normal{
-    border-radius: 30px;
-    width: 80px;  
-  
+    border-radius: 30px;    
     font-size: 1rem;
     background-color: #fff;
     display: block;
  
 }
 .index-li>.type-info{
-    width: 60%;
+    width: 50%;
     border: none;
     border-bottom: 1px solid #ccc;
     height: 1.5rem;

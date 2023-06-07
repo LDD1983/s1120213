@@ -192,9 +192,8 @@ input[type="file"] {
 .login-form label{
     color: #c14747;
     text-shadow: 1px 1px #f5f4f4;
-    position: relative;
-    right: 6rem;
     letter-spacing: 0.5rem;
+    font-size: 0.5rem;
 }
 
 form input[type="text"]:focus-visible {

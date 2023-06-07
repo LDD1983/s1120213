@@ -218,26 +218,24 @@ if (file_exists($file)) {
 
     })
 
-    // 檢查本地存儲是否存在平台偵測結果
-    var platformDetected = localStorage.getItem('platformDetected');
+       // 檢查瀏覽器寬度
+    function checkBrowserWidth() {
+      var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-    if (!platformDetected) {
-      // 進行平台偵測
-      function detectPlatformAndRedirect() {
-        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-        if (isMobile) {
-          window.location.href = 'https://wda.mackliu.com/s1120213/vote_m/';
-        } else {
-          window.location.href = 'https://wda.mackliu.com/s1120213/vote/';
-        }
+      // 如果寬度小於等於 600，跳轉至手機版網頁
+      if (width <= 1300) {
+        window.location.href = "https://wda.mackliu.com/s1120213/vote_m/";
       }
+    }
 
-      // 儲存平台偵測結果到本地存儲
-      localStorage.setItem('platformDetected', true);
+    // 在網頁加載時執行檢查
+    window.onload = function() {
+      checkBrowserWidth();
+    }
 
-      // 調用函數進行偵測和跳轉
-      detectPlatformAndRedirect();
+    // 當視窗大小改變時重新檢查
+    window.onresize = function() {
+      checkBrowserWidth();
     }
 
 
