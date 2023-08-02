@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Playground – Particle Emmiter</title>
+  <title>LIU DING</title>
   <link href="./css/style.css" rel="stylesheet">
   <link href="./css/mycss.css" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=excon@100&display=swap" rel="stylesheet">
@@ -37,7 +37,8 @@
           <!-- work---1 -->
           <div>
             <div class="worklist work-1">
-            01_Calender (PHP)
+            01_Calender 
+            <br> &nbsp;( PHP )
           </div>
           <div class="work-link link-1">
            <a href="https://wda.mackliu.com/s1120213/calendar/" target="_blank"> 
@@ -52,17 +53,19 @@
           <!-- work-2 -->
           <div>
              <div class="worklist work-2">              
-              02_Polling-System (PHP)
+              02_Polling-System 
+              <br> &nbsp;( PHP )
             </div>
             <div class="work-link link-2"> 
-              <a href="https://wda.mackliu.com/s1120213/vote/" target="_blank"> 黑箱作業 </a>
+              <a href="https://wda.mackliu.com/s1120213/vote/" target="_blank"> 投票系統 </a>
             </div>                     
           </div>
          
             <!-- work-3 -->
           <div>
             <div class="worklist work-3">
-            03_Calculator (JavaScript)
+            03_Calculator 
+            <br> &nbsp;( JavaScript )
             </div>
             <div class="work-link link-3">
               <a href="https://wda.mackliu.com/s1120213/calc/calc.html" target="_blank"> 簡易計算機  </a>
@@ -75,12 +78,23 @@
           <!-- work-4 -->
           <div> 
             <div class="worklist work-4">
-             04_Order Menu (Jquery)
+             04_Order Menu 
+             <br> &nbsp;( JQuery )
             </div>
             <div class="work-link link-4">
               <a href="./menu/index.html" target="_blank"> 簡易點餐表  </a>
+            </div>           
+          </div>
+          <!-- work-5 -->
+          <div> 
+            <div class="worklist work-5">
+              05_Digital Clock
+              <br> &nbsp;( JavaScript )
             </div>
-           
+            <div class="work-link link-5">
+              <a href="./time/index.html" target="_blank"> 
+                電子時鐘  </a>
+            </div>           
           </div>
          
 
@@ -122,12 +136,14 @@
   <!-- jq start -->
   <script>
     $(document).ready(function () {
+      // 綁定
       const workT = $('.workTag');
       const workA = $('.workarea');
       const infoT = $('.infoTag');
       const infoA = $('.infoarea');
       const nameT = $('.nameTag')
 
+      //  workTag onclick event
       workT.click(function () {
        
         workA.animate({
@@ -152,19 +168,25 @@
           "margin-left": "5rem"
 
         }, 3000,)
+        $('.work-5').animate({
+          "margin-left": "5rem"
+
+        }, 3200,)
+
+        $('.work-link').animate({
+          "margin-left": "38rem",
+           opacity:1,
+
+        }, 3200,)
         infoA.animate({
           opacity: 0,
           height: "1vh",
         }, 2000,)
         $(this).hide()
-        infoT.show()
-        
-
-       
-        
-        
-
+        infoT.show()                      
       })
+
+      // infoTag onclick event 
       infoT.click(function(){
         workA.animate({
           opacity: 0,
@@ -177,6 +199,11 @@
 
         $('.worklist').animate({
           "margin-left": "",
+
+        }, 2000,)
+        $('.work-link').animate({
+          "margin-left": "20rem",
+           opacity:0,
 
         }, 2000,)
 
