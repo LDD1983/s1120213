@@ -6,25 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新增主題</title>
-   
-   
+
+
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/form.css">
     <style>
-        .img{
+        .img {
             display: flex;
         }
-        .img>img{
-            width: 100%;
-           
-        }
 
+        .img>img {
+            width: 100%;
+
+        }
     </style>
 
 
 
-    
+
 </head>
 
 <body>
@@ -37,7 +37,7 @@
     </header>
     <nav>
         <a href="../backend.php">返回管理</a>
-        <a href="../backend.php?do=query_vote">結果查詢</a>
+        <a href="../backend.php?do=query_vote">投票管理</a>
     </nav>
 
     <main>
@@ -64,14 +64,15 @@
 
             <div class="type">
                 <label for="type">類型：</label>
-                <input type="radio" name="type" id="type1" value="1">單選&nbsp;
-                <input type="radio" name="type" id="type2" value="2">複選
+                <input type="radio" name="type" id="type1" value="1">&nbsp;單選&nbsp;
+                <input type="radio" name="type" id="type2" value="2">&nbsp;複選&nbsp;
             </div>
             <div class="login">
-                <label for="login">是否公開</label>
-                <input type="radio" name="login" id="login0" value="0">是 &nbsp;
-                <input type="radio" name="login" id="login1" value="1" >否
-            </div>           
+                <label for="login">是否公開 : </label>
+                <input type="radio" name="login" id="login0" value="0">&nbsp;是 &nbsp;
+                <input type="radio" name="login" id="login1" value="1">&nbsp;否&nbsp;
+            </div>
+
             <hr>
             <div class="options">
                 <div>
@@ -83,8 +84,7 @@
             </div>
             <div class="subm">
                 <input type="submit" value="確定新增" onclick="confirm('確定新增?')">
-                
-            </div>            
+
         </form>
     </main>
 

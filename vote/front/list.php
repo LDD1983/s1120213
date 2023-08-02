@@ -10,7 +10,7 @@
     foreach ($rows as $idx => $row) {
     ?>
         <li class="index-li">
-            <p class="main-subject">主題 : <?= $row['subject']; ?> </p>
+            <p class="main-subject" >主題 : <?= $row['subject']; ?> </p>
                 <button class="type-info" > 
 <?php
                     switch($row['type']){

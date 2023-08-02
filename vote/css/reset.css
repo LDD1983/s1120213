@@ -92,6 +92,7 @@ textarea {
 
 button,
 input {
+    height: 1.5rem;
     overflow: visible
 }
 

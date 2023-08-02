@@ -9,24 +9,24 @@
     }
     ?>
     <div>
-        <label for="acc">帳 號 : </label>
-        <input type="text" name="acc" id="acc">
+       
+        <input type="text" name="acc" id="acc" placeholder="帳號">
     </div>
     <div>
-        <label for="pw">密 碼 : </label>
-        <input type="password" name="pw" id="pw">
+        
+        <input type="password" name="pw" id="pw" placeholder="密碼">
     </div>
     <div>
-        <label for="name">姓 名 : </label>
-        <input type="text" name="name" id="name">
+   
+        <input type="text" name="name" id="name" placeholder="姓名">
     </div>
     <div>
-        <label for="addr">地 址 : </label>
-        <input type="text" name="addr" id="addr">
+       
+        <input type="text" name="addr" id="addr" placeholder="地址">
     </div>
-    <div class="email">
-        <label for="email">E-mail : </label>
-        <input type="text" name="email" id="email">
+    <div>
+      
+        <input type="text" name="email" id="email" placeholder="E-mail">
     </div>
     <div>
         <input type="submit" value="註冊">

@@ -13,10 +13,14 @@ $options=$pdo->query("select * from `options` where `subject_id`='{$_GET['id']}'
     
 <form action="./api/vote_api.php" method="post" class="vote">
     <h3><?= $topic['subject']; ?></h3>
-
+    <?php
+    if(!empty($topic['image'])){
+        echo "<img src='./upload/{$topic['image']}' style='width:50px;height:50px'>";
+    }
+?>
 
     <ul class="desc-ul">
-    <?php
+<?php
         foreach ($options as $idx => $opt) {
             echo "<li>";
             if($topic['type']==1){
@@ -29,7 +33,7 @@ $options=$pdo->query("select * from `options` where `subject_id`='{$_GET['id']}'
             echo "<span>{$opt['description']}</span>";
             echo "</li>";
         }
-    ?>
+        ?>
     </ul>
 
     <div class="f-inB">

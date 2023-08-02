@@ -19,7 +19,7 @@
     foreach ($rows as $row) {
     ?>
         <li class="list-row">
-            <div class="list-item"><?= $row['subject']; ?></div>          
+            <div class="list-item" style="color:brown;"><?= $row['subject']; ?></div>          
             <div class="list-item">
             <?php
                 $now=strtotime('now');
@@ -47,6 +47,7 @@
                 <button onclick="location.href='./back/close.php?id=<?=$row['id'];?>'">立即結束</button>
             </div>
         </li>
+        <hr style="width:90% ; opacity:.6;">    
     <?php
     }
     ?>

@@ -1,0 +1,173 @@
+* {
+    font-family: 'Excon', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+
+    width: 95vw;
+    height: 85vh;
+    /* background-color: lightpink; */
+    z-index: 1;
+    position: relative;
+    opacity: 0.8;
+    margin: 5vh auto;
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.content{
+    width: 80%;
+    height: 100%;
+}
+.nav{
+    padding-top:35rem;
+    width: 10%;
+    height: 100%;
+    margin-left: 5rem;
+}
+
+.row-2 {
+    margin-top: 8vh;
+}
+
+.row-3 {
+    margin-top: 2vh;
+
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    /* border: 1px solid white; */
+    width: 80%;
+}
+
+.workTag:hover,
+.infoTag:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    color: rgb(92, 91, 91);
+    letter-spacing: 0.5rem;
+}
+
+.nameTag {
+
+    margin-left: 5rem;
+}
+
+.port,
+.nameTag,
+.workTag,
+.infoTag {
+
+
+    font-size: 2rem;
+    color: white;
+
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+
+}
+
+.port {
+    letter-spacing: 3rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+
+}
+
+.workTag {
+  
+   
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+}
+
+.infoTag {
+    margin-left: 0.1rem;
+    margin-top: 0.5rem;
+    letter-spacing: 1.9rem;
+   
+    font-size: 1.5rem;
+
+}
+
+.workarea {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(30, 30, 30);
+    opacity: 0;
+
+
+}
+.workarea a:hover{
+    opacity: 0.6;
+    background-color: #2f2f2f;
+    margin-left: 0.5rem;
+}
+
+.worklist {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    color: aliceblue;
+
+
+}
+
+.work-1 {
+    margin-top: 3rem;
+}
+
+
+
+.infoarea {
+    width: 100%;
+    height: 1vh;
+    background-color: rgb(39, 39, 39);
+    opacity: 0;
+
+}
+.work-pic{
+    display: block;
+}
+.work-picLink{
+    opacity: 0.5;
+    cursor: pointer;
+    display: none;   
+}
+.work-link{
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin-left: 38rem;
+    margin-top: 1rem;
+}
+.work-link>a{
+    text-decoration: none;
+    color:white;
+    letter-spacing: 3rem;
+    font-family:system-ui;
+    font-weight: 100;
+    
+}
+.work-link>a:active{
+    color: white;
+}
+
+
+.link-1>a{
+    letter-spacing: 7.5rem;
+}
+
+.link-2>a{
+    letter-spacing: 4.5rem;
+}
+
+
+

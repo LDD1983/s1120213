@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .h-50px {
+            height: 100px;
+        }
+
+        .myfont {
+            font-size: 2rem;
+            letter-spacing: 1rem;
+        }
+
+        .header
+         {
+            background-image: url(https://picsum.photos/id/312/2000/300?grayscale);
+        }
+        .footer{
+            background-image: url(https://picsum.photos/id/425/1920/200?grayscale);
+            opacity: 0.4;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container-fluid  header py-5 ">
+        <div class="row ">
+            <div class="col my-5 text-light text-center display-6 text-uppercase">
+                ▓▓▓▓▓▓▓▓▓▓▓▓ menulist
+            </div>
+        </div>
+    </div>
+    <!-- main  -->
+    <div class="container-fluid border-top">
+        <!-- /////////////////  row-1 description -->
+        <div class="row bg-light shadow">
+            <!-- item -->
+            <div class="col-1 text-center py-2 h3">品項</div>
+            <!-- pic -->
+            <div class="col-2 text-center py-2 h3">照片</div>
+            <!-- price -->
+            <div class="col-3 text-center py-2 h3">價格</div>
+            <!-- number -->
+            <div class="col-3 text-center py-2 h3">數量</div>
+            <!-- sum -->
+            <div class="col-3 text-center py-2 h3">小計</div>
+        </div>
+        <!-- /////////////////  row-2  item-1 -->
+        <div class="row border">
+            <!-- item -->
+            <div class="col-1 h3 pt-5 fw-bold"> ▓ Latte</div>
+            <!-- pic -->
+            <div class="col-2 text-center border-start py-2">
+                <img src="https://picsum.photos/id/63/200/100" alt="" class="rounded-4 ">
+            </div>
+            <!-- price -->
+            <div class="col-3 text-center border-start ps-5 ">
+                <input type="number" name="" id="item1price" readonly value="100"
+                    class="border border-0 w-50 h2 mt-5 ms-5">
+            </div>
+            <!-- number -->
+            <div class="col-3 text-center border-start">
+                <input type="number" name="" id="item1num" 
+                class=" h2 mt-5 ms-5 w-25 border-dark" value="0" min="0">
+            </div>
+            <!-- sum -->
+            <div class="col-3 text-center border-start ps-5">
+                <input type="number" name="" id="item1sum" readonly value="0" 
+                class="border border-0 w-50 h2 mt-5 ms-5">
+            </div>
+        </div>
+        <!-- /////////////////  row-3 item-2 -->
+        <div class="row border">
+            <!-- item -->
+            <div class="col-1 h3 fw-bold pt-5"> ▓ Herb</div>
+            <!-- pic -->
+            <div class="col-2 text-center border-start py-2">
+                <img src="https://picsum.photos/id/326/200/100" alt="" class="rounded-4">
+            </div>
+            <!-- price -->
+            <div class="col-3 text-center border-start ps-5 ">
+                <input type="number" name="" id="item2price" readonly value="50"
+                    class="border border-0 w-50 h2 mt-5 ms-5">
+            </div>
+            <!-- number -->
+            <div class="col-3 text-center border-start">
+                <input type="number" name="" id="item2num" 
+                class=" h2 mt-5 ms-5 w-25 border-dark" value="0" min="0">
+            </div>
+            <!-- sum -->
+            <div class="col-3 text-center border-start ps-5">
+                <input type="number" name="" id="item2sum" readonly value="0" 
+                class="border border-0 w-50 h2 mt-5 ms-5">
+            </div>
+        </div>
+
+        <!-- /////////////////  row-4 item-3 -->
+        <div class="row border">
+            <!-- item -->
+            <div class="col-1 h3 fw-bold pt-5"> ▓ Daily</div>
+            <!-- pic -->
+            <div class="col-2 text-center border-start py-2">
+                <img src="https://picsum.photos/id/431/200/100" alt="" class="rounded-4">
+            </div>
+            <!-- price -->
+            <div class="col-3 text-center border-start  ps-5 ">
+                <input type="number" name="" id="item3price" readonly value="50"
+                    class="border border-0 w-50 h2 mt-5 ms-5">
+            </div>
+            <!-- number -->
+            <div class="col-3 text-center border-start ">
+                <input type="number" name="" id="item3num" 
+                class=" h2 mt-5 ms-5 w-25 border-dark" value="0" min="0">
+            </div>
+            <!-- sum -->
+            <div class="col-3 text-center border-start ps-5">
+                <input type="number" name="" id="item3sum" readonly value="0" 
+                class="border border-0 w-50 h2 mt-5 ms-5">
+            </div>
+        </div>
+    </div>
+    <!-- ///////////// order button /////////////// -->
+    <!-- Button trigger modal -->
+    <div class="container-fluid bg-light px-0 ">
+        <div class="row ">
+            <div class="col text-center py-5 ">
+                <button type="button" class="btn btn-dark w-50 h-50px text-light myfont " data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    訂購
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- //////////////footer //////////// -->
+    <div class="footer container-fluid bg-dark m-0">
+        <div class="row">
+            <div class="col fw-slim text-center py-4 text-light"> 
+                Copyright xxxxxxxxxDxxxxxxxxx ㊣ 2023  
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <!--///////////////// 跳出視窗//////////////// -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" 
+     tabindex="-1"aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">訂購明細</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span class="text-danger h5">Latte</span>
+                    <p id="myP1">
+                    </p>
+                    <span class="text-danger h5">Mocca</span>
+                    <p id="myP2">
+                    </p>
+                    <span class="text-danger h5">Daily</span>
+                    <p id="myP3">
+                    </p>
+                    <p class="text-center display-6">
+                        總計為 <span id="myP4" class="text-danger "> </span> 元
+                        <br>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-dark">確認訂購</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ////////////////// script /////////////////// -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        /////////////////////////// JQUERY 放在ready內 //////////////////
+        $(document).ready(function () {
+
+            // //////////item1 change event /////////////////////////////////////////
+
+            $('#item1num').change(function () {
+                // console.log('change ok');
+                let item1tempS = Number($('#item1price').val()) * Number($(this).val())
+                // console.log( $('#item1price').val());
+                // console.log('item1tempS',item1tempS);
+                $('#item1sum').val(item1tempS);
+            })
+            ///////////// item2 change event///////////////////////////////////////////
+
+            $('#item2num').change(function () {
+                // console.log('change ok');
+                let item2tempS = Number($('#item2price').val()) * Number($(this).val())
+                // console.log( $('#item1price').val());
+                // console.log('item1tempS',item1tempS);
+                $('#item2sum').val(item2tempS);
+            })
+            //////////// item3 change event ////////////////////////////////////////////
+            $('#item3num').change(function () {
+                // console.log('change ok');
+                let item3tempS = Number($('#item3price').val()) * Number($(this).val())
+                // console.log( $('#item1price').val());
+                // console.log('item1tempS',item1tempS);
+                $('#item3sum').val(item3tempS);
+            })
+
+            ////////////// btn click event////////////////////////////
+
+            $('.btn').click(() => {
+                // console.log('click ok');
+                // console.log($('item1num').val());            
+                let strP1 = $('#item1num').val() + " x " + $('#item1price').val() + " = " + $('#item1sum').val();
+                let strP2 = $('#item2num').val() + " x " + $('#item2price').val() + " = " + $('#item2sum').val();
+                let strP3 = $('#item3num').val() + " x " + $('#item3price').val() + " = " + $('#item3sum').val();
+                let sum = Number($('#item3sum').val()) + Number($('#item2sum').val()) + Number($('#item1sum').val());
+                let strP4 = sum;
+                if(sum>=500){
+                    let tempsum = sum
+                    sum = sum*0.8 ;
+                    strP4 = '滿五百打八折為 '+ tempsum + " x " + " 0.8 = " + sum
+
+                }
+            
+                $('#myP1').text(strP1);
+                $('#myP2').text(strP2);
+                $('#myP3').text(strP3);
+                $('#myP4').text(strP4);
+            })
+        });
+        // //////////////////////Jquery End  /////////////
+    </script>
+
+</body>
+
+</html>

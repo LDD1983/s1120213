@@ -1,6 +1,6 @@
 <?php
-// $dsn="mysql:host=localhost;charset=utf8;dbname=vote";
-$dsn="mysql:host=localhost;charset=utf8;dbname=s1120213";
+$dsn="mysql:host=localhost;charset=utf8;dbname=vote";
+// $dsn="mysql:host=localhost;charset=utf8;dbname=s1120213";
 $pdo=new PDO($dsn, 'root', '');
 // $pdo=new PDO($dsn, 's1120213', 's1120213');
 

@@ -12,8 +12,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
     border-bottom: 1px solid #ccc;
-    height: 3rem;
-    padding-top: 0.7rem;
+    height: 40px;
+    padding-top: 11px;
     width: 80%;
     margin: 0 auto;
 
@@ -35,7 +35,7 @@ nav>a {
     text-decoration: none;
     margin-left: 20px;
     font-weight: 500;
-    font-size: 1.3rem;  
+    font-size: 18px;  
 }
 
 header>a:hover{

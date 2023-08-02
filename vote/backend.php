@@ -57,14 +57,14 @@ if(isset($_GET['do'])){
                 echo '<nav>';
                 echo '<a href="./back/add_vote.php">新增投票</a>';
                 echo '<a href="./backend.php">管理首頁</a>';
-                echo '<a href="./backend.php?do=query_vote">結果查詢</a>';
+                echo '<a href="./backend.php?do=query_vote">投票管理</a>';
                 echo '</nav>';
             break;
             case 'admin';
                 echo '<nav>';
                 echo '<a href="./back/add_vote.php">新增投票</a>';
                 echo '<a href="./backend.php">管理首頁</a>';
-                echo '<a href="./backend.php?do=query_vote">結果查詢</a>';
+                echo '<a href="./backend.php?do=query_vote">投票管理</a>';
                 echo '</nav>';
             break;
 
