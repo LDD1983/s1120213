@@ -133,7 +133,6 @@
 .infoarea {
     width: 100%;
     height: 1vh;
-    /* background-color: rgb(31, 31, 31); */
     opacity: 0;
     border: 1px solid gray;
     border-left: none;
@@ -142,9 +141,14 @@
     font-size: 1.5rem;
     letter-spacing: 1rem;
     padding-top: 1.5rem;
-    padding-left: 10rem;
+    
     line-height: 2rem;
+    display: flex;
 
+}
+.info-pic>img{
+    width: 90%;
+    padding-left: 6rem;
 }
 
 
